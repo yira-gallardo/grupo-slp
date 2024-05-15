@@ -1,113 +1,105 @@
+import "swiper/css"; // Para estilos básicos
+import "swiper/css/navigation";
+import Slider from "./components/Slider/Slider";
+import Footer from "@/app/components/Footer/Footer";
+import Nav from "@/app/components/Nav/Nav";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="relative">
+      <Nav />
+      <div className="relative h-screen flex items-center pl-20 custom-mt-20">
+        <div
+          className="absolute top-0 right-0 w-full h-full z-[-1] blur"
+          style={{ backgroundImage: "url('/img/img-1.png')" }}
+        />
+        <div className="relative flex flex-col items-start">
+          <img src="/img/logo.png" alt="Imagen" className="h-28 w-52 ml-4" />
+          <div className="text-white pt-10 pl-4">
+            <p className="text-left text-5xl font-bold">Aportamos luz</p>
+            <p className="text-left mb-1 text-4xl">a tu vida diaria</p>
+          </div>
+          <div className="mt-2 ml-4 flex items-center space-x-5 pt-12">
+            <img src="/img/logo-1.png" alt="Logo 1" className="h-6 w-20 mr-2" />
+            <img src="/img/logo-2.png" alt="Logo 2" className="h-6 w-20 mr-2" />
+            <img src="/img/logo-3.png" alt="Logo 3" className="h-6 w-20 mr-2" />
+            <img src="/img/logo-4.png" alt="Logo 4" className="h-6 w-10 mr-2" />
+            <img src="/img/logo-5.png" alt="Logo 5" className="h-6 w-20 mr-2" />
+          </div>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <section
+        className="bg-cover bg-center pt-20 pb-52"
+        style={{ backgroundImage: "url('/img/img-3.png')" }}
+      >
+        <div className="container mx-auto px-4">
+          <h2 className=" text-5xl text-black pt-16">
+            Somos una empresa <br></br>
+            <span className="font-bold">100% mexicana</span>
+          </h2>
+          <p className="text-black mt-4 py-10">
+            Con una proyección mundial para los diferentes mercados de<br></br>
+            iluminación. Buscamos innovar constantemente nuestros<br></br>
+            productos, incrementando sus características técnicas para <br></br>
+            ofrecer soluciones que se adapten a las necesidades <br></br>de
+            cualquier proyecto.
+          </p>
+          <button className="mt-4 px-6 py-3 bg-transparent text-black border border-black rounded-md ">
+            Más sobre Grupo SLP
+          </button>
+        </div>
+      </section>
+      <section className="flex flex-wrap items-center">
+        <div className="mx-auto md:mx-0 w-full md:w-auto h-auto">
+          <img src="/img/img-4.png" alt="" className="mx-auto md:mx-0" />
+        </div>
+        <div className="w-full md:w-1/2 bg-white p-8">
+          <h2 className="text-5xl font-bold mb-4">
+            Inversión <span className="text-blue-600">responsable</span>
+          </h2>
+          <p className="text-xl">
+            Una pieza clave en el desarrollo y crecimiento de Grupo SLP ha
+            <br></br> sido el desarrollo de soluciones cuidadosas con el medio
+            ambiente
+          </p>
+          <br></br>
+          <p className="text-xl font-bold">
+            Buscamos que nuestros productos cumplan con las <br></br>
+            características propias del ahorro de energía
+          </p>
+          <br></br>
+          <p className="text-xl">
+            <span className="font-bold">
+              Contamos con un reconocimiento por parte del INAH{" "}
+            </span>
+            como una <br></br>
+            empresa que respeta y acata las especificaciones de la iluminación
+            <br></br>
+            para piezas históricas que requieren cuidados especiales.
+          </p>
+        </div>
+      </section>
+      <section>
+        <Slider />
+      </section>
+      <div className="bg-black text-white py-12 px-4 text-center pt-16">
+        <h2 className="text-2xl font-semibold mb-6">
+          Nuestras marcas son ejemplo de versatilidad y adaptabilidad, tenemos
+          <br></br>
+          la solución para cualquier proyecto, sin importar su tamaño
+        </h2>
+        <div className="flex justify-center items-center space-x-10">
+          <div className="flex items-center space-x-4">
+            <img
+              src="/img/logos.png"
+              alt="Philco Iluminación"
+              className="h-12 "
+            />
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Footer />
     </main>
   );
 }
