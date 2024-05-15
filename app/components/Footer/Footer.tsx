@@ -2,63 +2,69 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-12 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-8">
-        <div>
+    <footer className="bg-black text-white py-12 px-4 text-neutral-400">
+      <div className="max-w-7xl mx-auto py-16 flex gap-16 border-b">
+        <div className="w-1/3 border-r pr-8 py-8">
           <ul>
             <li className="mb-4">
-              <a href="#" className="flex items-center justify-between">
-                <span>¿Quiénes somos?</span> <span>→</span>
-              </a>
+              <Link
+                href="#"
+                className="flex items-center justify-between border-b py-4  font-light"
+              >
+                <span>¿Quiénes somos?</span>
+                <span>→</span>
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#" className="flex items-center justify-between">
-                <span>Términos y Condiciones</span> <span>→</span>
-              </a>
+              <Link
+                href="#"
+                className="flex items-center justify-between border-b py-4  font-light"
+              >
+                <span>Términos y Condiciones</span>
+                <span>→</span>
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#" className="flex items-center justify-between">
-                <span>Aviso de Privacidad</span> <span>→</span>
-              </a>
+              <Link
+                href="#"
+                className="flex items-center justify-between border-b py-4  font-light"
+              >
+                <span>Aviso de Privacidad</span>
+                <span>→</span>
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#" className="flex items-center justify-between">
-                <span>Políticas de reembolso</span> <span>→</span>
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#" className="flex items-center justify-between">
-                <span>Políticas de envíos</span> <span>→</span>
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#" className="flex items-center justify-between">
-                <span>FAQ</span> <span>→</span>
-              </a>
+              <Link
+                href="#"
+                className="flex items-center justify-between border-b py-4  font-light"
+              >
+                <span>FAQ</span>
+                <span>→</span>
+              </Link>
             </li>
           </ul>
         </div>
-        <div>
+        <div className="w-1/3 py-8 border-r">
           <ul>
             <li className="mb-4">
-              <a href="#" className="block">
+              <Link href="#" className="block">
                 Bolsa de trabajo
-              </a>
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#" className="block">
+              <Link href="#" className="block">
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#" className="block">
+              <Link href="#" className="block">
                 Outlet
-              </a>
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#" className="block">
+              <Link href="#" className="block">
                 Distribuidores
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="mt-8">
@@ -67,18 +73,23 @@ export default function Footer() {
               nuestro Newsletter
             </p>
             <form className="flex">
-              <input
-                type="email"
-                placeholder="Tu correo electrónico"
-                className="p-2 text-black mr-2"
-              />
-              <button type="submit" className="bg-gray-800 text-white p-2">
-                Enviar
-              </button>
+              <div className="border rounded-md overflow-hidden">
+                <input
+                  type="email"
+                  placeholder="Tu correo electrónico"
+                  className="p-2 text-white mr-2 bg-transparent"
+                />
+                <button
+                  type="submit"
+                  className="bg-gray-800 text-white p-2 px-8"
+                >
+                  Enviar
+                </button>
+              </div>
             </form>
           </div>
         </div>
-        <div>
+        <div className="w-1/3 py-8">
           <p className="mb-4">
             Horarios y días de atención: lunes a jueves de 07:00 am a 05:00 pm
           </p>
@@ -141,12 +152,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-8">
         <div className="flex items-center">
           <img src="/img/img-7.png" alt="Grupo SLP" className="h-20 mr-4" />
         </div>
         <div className="flex items-center">
-          <hr className="border-gray-600 w-full mr-4" />
           <span className="text-sm">Grupo SLP © 2024 All rights reserved</span>
         </div>
       </div>
