@@ -1,32 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Nosotros() {
   return (
     <main className="relative">
-      <nav className="absolute top-0 right-0 z-10 flex justify-between items-center w-full h-16 text-white px-6">
-        <div className="flex items-center h-full pl-16 pt-20">
-          <img src="/img/logo.png" alt="Grupo SLP Logo" className="h-20 mr-4" />
-        </div>
-        <ul className="flex space-x-8 pt-10 pr-10">
-          <li>
-            <Link href="#" className="hover:text-gray-300 pr-14">
-              Nosotros
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#"
-              className="relative hover:text-gray-300 mr-4 py-2 px-4"
-            >
-              Contacto
-              <span className="absolute top-0 right-0 bottom-0 left-0 border border-white"></span>
-            </Link>
-          </li>
-        </ul>
-      </nav>
       <div className=" text-white relative min-h-screen ">
         <div
           style={{ backgroundImage: "url('/img/nosotros-bg.png')" }}

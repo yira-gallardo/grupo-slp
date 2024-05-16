@@ -1,6 +1,4 @@
 "use client";
-import Footer from "@/app/components/Footer/Footer";
-import Nav from "@/app/components/Nav/Nav";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -8,7 +6,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="relative">
-      <Nav />
       {/* HEADER */}
       <header className="relative h-screen flex items-center pl-20 custom-mt-20">
         <div

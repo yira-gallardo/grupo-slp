@@ -1,27 +1,47 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
-  return (
-    <>
-      <nav className="absolute top-0 right-0 z-10 flex justify-end items-center h-16 text-white px-6 mr-4">
-        <ul className="flex space-x-8 pt-10 pr-10">
-          <li>
-            <a href="#" className="hover:text-gray-300 pr-14">
-              Nosotros
-            </a>
-          </li>
+  const [isHome, setIsHome] = useState(false);
+  const pathname = usePathname();
 
-          <li>
-            <a href="#" className="relative hover:text-gray-300 mr-4 py-2 px-4">
-              Contacto
-              <span className="absolute top-0 right-0 bottom-0 left-0 border border-white"></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </>
+  useEffect(() => {
+    setIsHome(pathname === "/");
+  }, [pathname]);
+
+  return (
+    <nav className="absolute top-0 right-0 flex justify-between items-center text-white w-full p-8 z-[1]">
+      <div>
+        {!isHome && (
+          <Link href="/">
+            <Image
+              src="/img/logo.png"
+              width={100}
+              height={100}
+              alt="Grupo SLP Logo"
+              className="h-auto w-[120px]"
+            />
+          </Link>
+        )}
+      </div>
+      <ul className="flex gap-8">
+        <li>
+          <Link href="/nosotros" className="hover:text-gray-300 p-8">
+            Nosotros
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/contacto"
+            className="hover:text-gray-300 py-4 px-8 border"
+          >
+            Contacto
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
