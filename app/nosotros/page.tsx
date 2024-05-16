@@ -1,27 +1,29 @@
 "use client";
 import React from "react";
-import Footer from "@/app/components/Footer/Footer";
-import Nav from "@/app/components/Nav/Nav";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Nosotros() {
   return (
-    <main>
+    <main className="relative">
       <nav className="absolute top-0 right-0 z-10 flex justify-between items-center w-full h-16 text-white px-6">
         <div className="flex items-center h-full pl-16 pt-20">
           <img src="/img/logo.png" alt="Grupo SLP Logo" className="h-20 mr-4" />
         </div>
         <ul className="flex space-x-8 pt-10 pr-10">
           <li>
-            <a href="#" className="hover:text-gray-300 pr-14">
+            <Link href="#" className="hover:text-gray-300 pr-14">
               Nosotros
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="relative hover:text-gray-300 mr-4 py-2 px-4">
+            <Link
+              href="#"
+              className="relative hover:text-gray-300 mr-4 py-2 px-4"
+            >
               Contacto
               <span className="absolute top-0 right-0 bottom-0 left-0 border border-white"></span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -38,26 +40,62 @@ export default function Nosotros() {
           </div>
           <div className="flex justify-around py-6 w-full">
             <div className="flex items-center">
-              <img src="/img/logo-1.png" alt="Logo 1" className="h-5 mr-1" />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-1.png"
+                alt="Logo 1"
+                className="h-[20px] w-auto"
+              />
             </div>
             <div className="flex items-center">
-              <img src="/img/logo-2.png" alt="Logo 2" className="h-5 mr-1" />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-2.png"
+                alt="Logo 2"
+                className="h-[20px] w-auto"
+              />
             </div>
             <div className="flex items-center">
-              <img src="/img/logo-3.png" alt="Logo 3" className="h-5 mr-1" />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-3.png"
+                alt="Logo 3"
+                className="h-[20px] w-auto"
+              />
             </div>
             <div className="flex items-center">
-              <img src="/img/logo-4.png" alt="Logo 4" className="h-8 mr-1" />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-4.png"
+                alt="Logo 4"
+                className="h-[20px] w-auto"
+              />
             </div>
             <div className="flex items-center">
-              <img src="/img/logo-5.png" alt="Logo 5" className="h-5 mr-1" />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-5.png"
+                alt="Logo 5"
+                className="h-[20px] w-auto"
+              />
             </div>
           </div>
         </div>
       </div>
       <section className="bg-white py-12 px-8 flex items-center">
-        <div className="w-1/2 pr-8">
-          <img src="/img/img-11.png" alt="Imagen" className="w-full " />
+        <div className="flex px-16 gap-16">
+          <Image
+            width={500}
+            height={500}
+            src="/img/img-11.png"
+            alt="Misión"
+            className="w-full h-auto"
+          />
         </div>
         <div className="w-1/2">
           <h2 className="text-4xl font-bold mb-4">Quiénes somos</h2>
@@ -154,10 +192,12 @@ export default function Nosotros() {
           </p>
         </div>
         <div className="w-1/3 flex justify-center ">
-          <img
+          <Image
+            width={500}
+            height={500}
             src="/img/img-12.png"
-            alt="Tool Image"
-            className="max-w-full h-auto"
+            alt="Logo 5"
+            className="w-full h-auto"
           />
         </div>
       </div>
@@ -186,31 +226,78 @@ export default function Nosotros() {
           <li>PAESE</li>
           <li>Hipoteca Verde</li>
         </ul>
-        <img
+        <Image
+          width={200}
+          height={100}
           src="/img/logo-9.png"
-          alt="Philco Iluminación"
+          alt="Logo 5"
           className="h-8 mr-1"
         />
-
+        {/* Brillamax */}
         <p className="pt-16 ">
-          Orgullosamente nuestra primera marca. <br></br>Su calidad y variedad
-          está dirigida a diferentes segmentos industriales; desde fábricas,
-          oficinas, hospitales, escuelas, alumbrado público y reflectores, hasta
-          productos <br></br>decorativos. Gracias a su cuerpo hecho de aluminio,
-          un vulvo de LED podría iluminar tus espacios durante todo el día.
-          Además, soporta variaciones de voltaje y ayuda a <br></br>disipar
-          mejor el calor.<br></br>
+          Orgullosamente nuestra primera marca.
+          <br></br> <br></br>Su calidad y variedad está dirigida a diferentes
+          segmentos industriales; desde fábricas, oficinas, hospitales,
+          escuelas, alumbrado público y reflectores, hasta productos <br></br>
+          decorativos. Gracias a su cuerpo hecho de aluminio, un vulvo de LED
+          podría iluminar tus espacios durante todo el día. Además, soporta
+          variaciones de voltaje y ayuda a <br></br>disipar mejor el calor.
+          <br></br>
+          <br></br>
           <span className="font-bold text-gray-700">
             Este producto puede ser personalizado.
           </span>
         </p>
-        <img
-          src="/img/logo-9.png"
-          alt="Philco Iluminación"
+        <Image
+          width={200}
+          height={100}
+          src="/img/logo-10.png"
+          alt="Logo 5"
           className="h-8 mr-1 "
         />
+        <p className="pt-16 ">
+          Enfocada al diseño arquitectónico, exteriores, paisajismo y luminarias
+          subacuaticas.
+        </p>
+        <p>
+          Es un producto de fabricación nacional, que se realiza en un tiempo
+          máximo de dos semanas, pensado para grandes proyectos. Cuenta con más
+          de 30,000 configuraciones hechas a tu medida, óptica para iluminación
+          específica y colores que enfatizarán la belleza de tu espacio.
+          Disponible en tecnología de radiofrecuencia y tecnología DMX.
+        </p>
+        <span className="font-bold text-gray-700">
+          Pregunta por nuestro servicio de asesoría y acompañamiento.
+        </span>
+        <Image
+          width={200}
+          height={100}
+          src="/img/logo-11.png"
+          alt="Logo 5"
+          className="h-8 mr-1"
+        />
+        <p className="pt-16 ">
+          Enfocada al diseño arquitectónico, exteriores, paisajismo y luminarias
+          subacuaticas.
+        </p>
+        <p>
+          Es un producto de fabricación nacional, que se realiza en un tiempo
+          máximo de dos semanas, pensado para grandes proyectos. Cuenta con más
+          de 30,000 configuraciones hechas a tu medida, óptica para iluminación
+          específica y colores que enfatizarán la belleza de tu espacio.
+          Disponible en tecnología de radiofrecuencia y tecnología DMX.
+        </p>
+        <span className="font-bold text-gray-700">
+          Pregunta por nuestro servicio de asesoría y acompañamiento.
+        </span>
+        <Image
+          width={50}
+          height={80}
+          src="/img/logo-12.png"
+          alt="Logo 5"
+          className="h-8 mr-1"
+        />
       </div>
-      <Footer />
     </main>
   );
 }
