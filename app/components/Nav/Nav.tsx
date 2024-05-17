@@ -46,7 +46,7 @@ export default function Nav() {
         </li>
         <li>
           <Link
-            href="/contacto"
+            href="/#contacto"
             className="hover:text-gray-300 py-4 px-8 border"
           >
             Contacto
