@@ -13,17 +13,47 @@ export default function AvisoDePrivacidad() {
   // AQUI AGREGAS Y QUITAS PREGUNTAS Y RESPUESTAS
   const accordionData = [
     {
-      title: "¿Qué datos personales recabamos?",
+      title: "1 - ¿Qué datos personales tuyos recabamos?",
       content:
         "Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar tus datos personales de distintas formas: cuando nos los proporcionas directamente, cuando visitas nuestro sitio de Internet o utilizas nuestros servicios en línea y cuando obtenemos información a través de otras fuentes que están permitidas por la ley.",
     },
     {
-      title: "¿Para qué fines utilizamos tus datos personales?",
+      title: "2 - ¿Qué hacemos con tu información?",
       content:
         "Utilizamos tus datos personales para las siguientes finalidades: finalidades administrativas relacionadas con el desempeño de las obligaciones contractuales y/o comerciales relativas, así como para el desempeño de las obligaciones de ley aplicables para darte de alta como cliente o proveedor, con fines de contratación.",
     },
     {
-      title: "¿Cómo puedes ejercer tus derechos ARCO?",
+      title: "3 - Consentimiento",
+      content:
+        "Puedes ejercer tus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) al tratamiento de tus datos personales a través de la presentación de la solicitud correspondiente. Para más información sobre los procedimientos y requisitos para el ejercicio de estos derechos, puedes ponerte en contacto con nuestro departamento de datos personales.",
+    },
+    {
+      title: "4 - Divulgación",
+      content:
+        "Puedes ejercer tus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) al tratamiento de tus datos personales a través de la presentación de la solicitud correspondiente. Para más información sobre los procedimientos y requisitos para el ejercicio de estos derechos, puedes ponerte en contacto con nuestro departamento de datos personales.",
+    },
+    {
+      title: "5 - Shopify",
+      content:
+        "Puedes ejercer tus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) al tratamiento de tus datos personales a través de la presentación de la solicitud correspondiente. Para más información sobre los procedimientos y requisitos para el ejercicio de estos derechos, puedes ponerte en contacto con nuestro departamento de datos personales.",
+    },
+    {
+      title: "6 - Servicios de terceras partes",
+      content:
+        "Puedes ejercer tus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) al tratamiento de tus datos personales a través de la presentación de la solicitud correspondiente. Para más información sobre los procedimientos y requisitos para el ejercicio de estos derechos, puedes ponerte en contacto con nuestro departamento de datos personales.",
+    },
+    {
+      title: "7 - Seguridad",
+      content:
+        "Puedes ejercer tus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) al tratamiento de tus datos personales a través de la presentación de la solicitud correspondiente. Para más información sobre los procedimientos y requisitos para el ejercicio de estos derechos, puedes ponerte en contacto con nuestro departamento de datos personales.",
+    },
+    {
+      title: "8 - Edad de consentimiento",
+      content:
+        "Puedes ejercer tus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) al tratamiento de tus datos personales a través de la presentación de la solicitud correspondiente. Para más información sobre los procedimientos y requisitos para el ejercicio de estos derechos, puedes ponerte en contacto con nuestro departamento de datos personales.",
+    },
+    {
+      title: "9 - Cambios a esta política de privacidad",
       content:
         "Puedes ejercer tus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) al tratamiento de tus datos personales a través de la presentación de la solicitud correspondiente. Para más información sobre los procedimientos y requisitos para el ejercicio de estos derechos, puedes ponerte en contacto con nuestro departamento de datos personales.",
     },
@@ -77,28 +107,34 @@ export default function AvisoDePrivacidad() {
       </header>
       {/* INFO */}
       <section className="bg-white px-16 mb-4 text-black">
-        <p className="text-black">
-          Con el fin de asegurar la protección y privacidad de tus datos
-          personales, así como de regular el acceso, rectificación, cancelación
-          y oposición del manejo de los mismos, hemos desarrollado una política
-          de privacidad que ayude a comprender la manera en que se utiliza tu
-          información en conformidad con el artículo 16 de la Constitución
-          Política de los Estados Unidos Mexicanos y los artículos 1, 15 y 16 de
-          la Ley Federal de Protección de Datos Personales en Posesión de
-          Particulares.
-        </p>
-        <p className="text-black">
-          Por lo anterior, Comercializadora Soluciones Lumínicas Plus S.A. de
-          C.V., persona moral debidamente constituida conforme a las leyes de la
-          República Mexicana, con domicilio fiscal en Av. Lomas de Sotelo 1102
-          int. 200 y 202, col. Lomas Hermosa, Miguel Hidalgo, Ciudad de México,
-          México, es el responsable del tratamiento de tus datos personales.
-          Recabamos tus datos para las siguientes finalidades: finalidades
-          administrativas relacionadas con el desempeño de las obligaciones
-          contractuales y/o comerciales relativas, así como para el desempeño de
-          las obligaciones de ley aplicables para darte de alta como cliente o
-          proveedor, con fines de contratación.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, x: -10 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          <p className="text-black">
+            Con el fin de asegurar la protección y privacidad de tus datos
+            personales, así como de regular el acceso, rectificación,
+            cancelación y oposición del manejo de los mismos, hemos desarrollado
+            una política de privacidad que ayude a comprender la manera en que
+            se utiliza tu información en conformidad con el artículo 16 de la
+            Constitución Política de los Estados Unidos Mexicanos y los
+            artículos 1, 15 y 16 de la Ley Federal de Protección de Datos
+            Personales en Posesión de Particulares.
+          </p>
+          <p className="text-black">
+            Por lo anterior, Comercializadora Soluciones Lumínicas Plus S.A. de
+            C.V., persona moral debidamente constituida conforme a las leyes de
+            la República Mexicana, con domicilio fiscal en Av. Lomas de Sotelo
+            1102 int. 200 y 202, col. Lomas Hermosa, Miguel Hidalgo, Ciudad de
+            México, México, es el responsable del tratamiento de tus datos
+            personales. Recabamos tus datos para las siguientes finalidades:
+            finalidades administrativas relacionadas con el desempeño de las
+            obligaciones contractuales y/o comerciales relativas, así como para
+            el desempeño de las obligaciones de ley aplicables para darte de
+            alta como cliente o proveedor, con fines de contratación.
+          </p>
+        </motion.div>
       </section>
       {/* ACCORDION */}
       <section className="bg-white mb-4 text-black p-32">

@@ -29,7 +29,7 @@ export default function Footer() {
             </li>
             <li className="mb-4">
               <Link
-                href="#"
+                href="/aviso-de-privacidad"
                 className="flex items-center justify-between border-b py-4  font-light"
               >
                 <span>Aviso de Privacidad</span>
