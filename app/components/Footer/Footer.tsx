@@ -11,7 +11,7 @@ export default function Footer() {
           <ul>
             <li className="mb-4">
               <Link
-                href="#"
+                href="/nosotros"
                 className="flex items-center justify-between border-b py-4  font-light"
               >
                 <span>¿Quiénes somos?</span>
@@ -20,7 +20,7 @@ export default function Footer() {
             </li>
             <li className="mb-4">
               <Link
-                href="#"
+                href="/terminos-y-condiciones"
                 className="flex items-center justify-between border-b py-4  font-light"
               >
                 <span>Términos y Condiciones</span>

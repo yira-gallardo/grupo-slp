@@ -57,6 +57,61 @@ export default function AvisoDePrivacidad() {
       content:
         "Si a pedido nuestro envías ciertas presentaciones específicas (por ejemplo, para la participación en concursos), o sin pedido de nuestra parte envías ideas creativas, sugerencias, proposiciones, planes u otros materiales por cualquier medio, aceptas que podemos en cualquier momento, sin restricción, editar, copiar, publicar, distribuir o utilizar a placer los comentarios que nos hayas enviado. No tenemos ni tendremos ninguna obligación 1) de mantener confidencialmente ningún comentario, 2) de pagar compensación por comentarios o 3) de responder a comentarios. Nosotros podemos, pero no tenemos obligación de, monitorear, editar o remover contenido que consideremos sea ilegítimo, ofensivo, amenazante, calumnioso, difamatorio, pornográfico, obsceno u objetable o viole la propiedad intelectual de cualquiera de las partes o los Términos de Servicio. Aceptas que tus comentarios no violarán los derechos de terceras partes, incluyendo derechos de autor, marca, privacidad, personalidad u otro derechos personal o de propiedad. Asimismo, aceptas que tus comentarios no contienen material difamatorio o ilegal, abusivo u obsceno, o contienen virus informáticos u otro malware que pudiera, de alguna manera, afectar el funcionamiento del Servicio o de cualquier sitio web relacionado. No puedes utilizar una dirección de correo electrónico falsa, usar otra identidad que no sea legítima, o engañar a terceras partes o a nosotros en cuanto al origen de tus comentarios. Tú eres el único responsable por los comentarios que haces y su precisión. No nos hacemos responsables y no asumimos ninguna obligación con respecto a los comentarios publicados por ti o cualquier tercer parte.",
     },
+    {
+      title: "10 - Información personal",
+      content:
+        "La información personal que presentes a través de nuestro sitio web, se rige por nuestra Política de Privacidad. Consúltala antes de proporcionar cualquier dato sensible",
+    },
+    {
+      title: "11 - Errores, inexactitudes y omisiones",
+      content:
+        "Eventualmente, puede haber información en nuestro sitio o en el Servicio que contenga errores tipográficos, inexactitudes u omisiones que puedan estar relacionadas con las descripciones de productos, precios, promociones, ofertas, gastos de envío del producto, el tiempo de tránsito y la disponibilidad. Nos reservamos el derecho de corregir los errores, inexactitudes u omisiones y de cambiar o actualizar la información o cancelar pedidos si alguna información en el sitio web es inexacta, sin previo aviso (incluso después de que hayas enviado tu orden). No asumimos ninguna obligación de actualizar, corregir o aclarar la información en el Servicio o en cualquier sitio web relacionado, incluyendo, sin limitación, la información de precios, excepto cuando sea requerido por la ley. Ninguna especificación actualizada o fecha de actualización aplicada en el Servicio o en cualquier sitio web relacionado, debe ser tomada para indicar que toda la información en el Servicio o en cualquier sitio web relacionado ha sido modificada o actualizada.",
+    },
+    {
+      title: "12 - Usos prohibidos",
+      content:
+        "En adición a otras prohibiciones, como se establece en los Términos de Servicio, se prohibe el uso del sitio o su contenido: a) para ningún propósito ilegal; b) para pedirle a otros que realicen o participen en actos ilícitos; c) para violar cualquier regulación, reglas, leyes internacionales, federales, provinciales, estatales u ordenanzas locales; d) para infringir o violar el derecho de propiedad intelectual nuestro o de terceras partes; e) para acosar, abusar, insultar, dañar, difamar, calumniar, desprestigiar, intimidar o discriminar por razones de género, orientación sexual, religión, etnia, raza, edad, nacionalidad o discapacidad; f) para presentar información falsa o engañosa; g) para cargar o transmitir virus o cualquier tipo de código malicioso que sea o pueda ser utilizado en cualquier forma que pueda comprometer la funcionalidad o el funcionamiento del Servicio o de cualquier sitio web relacionado; h) para recopilar o rastrear información personal de otros; i) para generar spam, phish, pham, pretext, spider, crawl o scrape; j) para cualquier propósito obsceno o inmoral; k) para interferir con o burlar elementos de seguridad del Servicio o cualquier sitio web relacionado, otros sitios o Internet. Nos reservamos el derecho de suspender el uso del Servicio o cualquier sitio web relacionado por violar cualquiera de los ítems de los usos prohibidos.",
+    },
+    {
+      title: "13 - Exclusión de garantías; limitación de responsabilidad",
+      content:
+        "No garantizamos ni aseguramos que el uso de nuestro servicio será ininterrumpido, puntual, seguro o libre de errores. No garantizamos que los resultados que se puedan obtener del uso del servicio serán exactos o confiables. Aceptas que ocasionalmente podemos quitar el servicio por periodos de tiempo indefinidos o cancelarlo sin previo aviso. Aceptas expresamente que el uso de, o la posibilidad de utilizar el servicio es bajo tu propio riesgo. El servicio y todos los productos proporcionados a través del servicio son (salvo lo expresamente manifestado por nosotros) proporcionados tal cual y según esté disponible, sin ningún tipo de representación, garantías, o condiciones expresas o implícitas, incluidas todas las garantías o condiciones de comercialización, calidad comercializable, la aptitud para un propósito particular, durabilidad, título y no infracción. En ningún caso Philco Iluminación, nuestros directores, funcionarios, empleados, afiliados, agentes, contratistas, internos, proveedores, prestadores de servicios o licenciantes serán responsables por cualquier daño, pérdida, reclamo o consecuentes de cualquier tipo, incluyendo, sin limitación, pérdida de beneficios, pérdida de ingresos, pérdida de ahorros, pérdida de datos, costos de reemplazo o cualquier daño similar, ya sea basado en contrato, agravio (incluyendo negligencia), responsabilidad estricta o de otra manera, como consecuencia del uso de cualquiera de los servicios o productos adquiridos mediante el servicio, o por cualquier otro relacionado con el uso del servicio o cualquier producto, incluyendo pero no limitando, cualquier error u omisión de contenido, o cualquier pérdida o daño incurridos como resultado de la utilización del servicio o producto puesto a disposición a través nuestro. Debido a que algunos estados o jurisdicciones no permiten la exclusión o la limitación de responsabilidades por daños consecuenciales o incidentales, en tales estados o jurisdicciones nuestra responsabilidad se limitará en la medida máxima permitida por la leyla exclusión o la limitación de responsabilidad por daños consecuenciales o incidentales, en tales estados o jurisdicciones, nuestra responsabilidad se limitará en la medida máxima permitida por la ley.",
+    },
+    {
+      title: "14 - Indemnización",
+      content:
+        "Aceptas indemnizar, defender y mantener incólume Ventor Internacional y nuestras matrices, subsidiarias, afiliados, socios, funcionarios, directores, agentes, contratistas, concesionarios, proveedores de servicios, subcontratistas, proveedores internos y empleados, de cualquier reclamo o demanda, incluyendo honorarios razonables de abogados, hechos por cualquier tercero a causa o como resultado de tu incumplimiento de las Condiciones de Servicio o de los documentos que incorporan como referencia, o la violación de cualquier ley o de los derechos de un tercero.",
+    },
+    {
+      title: "15 - Divisibilidad",
+      content:
+        "En el caso de que se determine que cualquier disposición de estas Condiciones de Servicio sea ilegal, nula o inejecutable, dicha disposición seguirá siendo efectiva a obtener la máxima permitida por la ley aplicable, y la parte no exigible se considerará separada de estos Términos de Servicio. Esto no afectará la validez de las disposiciones restantes.",
+    },
+    {
+      title: "16 - Rescisión",
+      content:
+        "Las obligaciones y responsabilidades de las partes que hayan incurrido con anterioridad a la fecha de terminación de este acuerdo, sobrevivirán a todos sus efectos. Estas Condiciones de servicio son efectivas a menos que y hasta que sean terminadas por ti o por nosotros. Puedes concluir estos Términos de Servicio en cualquier momento, al avisarnos que ya no deseas utilizarlos o cuando dejes de usar nuestro sitio web. Si a nuestro juicio, fallas o se sospechas que has fallado en el cumplimiento de cualquier término o disposición de estas Condiciones de Servicio, podemos terminar este acuerdo en cualquier momento sin previo aviso. Aun así, seguirás siendo responsable de todos los montos adeudados hasta la fecha de terminación. En consecuencia, podemos negarte el acceso a nuestro servicio (o a cualquier parte del mismo).",
+    },
+    {
+      title: "17 - Acuerdo completo",
+      content:
+        "Estas Condiciones y las políticas o reglas de operación publicadas en este sitio, constituyen el acuerdo completo y el entendimiento entre tú y nosotros, rigen el uso del Servicio y reemplazan cualquier acuerdo, comunicación y propuestas anteriores o contemporáneas, ya sean orales o escritas (incluyendo, pero no limitando cualquier versión previa de los Términos de Servicio). Cualquier ambigüedad en la interpretación de estas Condiciones, no actuará en contra del equipo de redacción.",
+    },
+    {
+      title: "18 - Ley",
+      content:
+        "Estas Condiciones y cualquier acuerdo aparte en el que te proporcionemos servicios, se regirán e interpretarán en conformidad con las leyes del Estado de México.",
+    },
+    {
+      title: "19 - Cambios en los términos de servicio",
+      content:
+        "Puedes revisar la versión más actualizada de los Términos de Servicio desde esta página, en cualquier momento. Nos reservamos el derecho, a nuestra sola discreción, de actualizar, modificar o reemplazar cualquier parte de estas Condiciones mediante la publicación de las actualizaciones o cambios en nuestro sitio web. Es tu responsabilidad revisarlas periódicamente para verificar los cambios. El uso continuó de nuestro sitio web o de nuestros servicios, después de la publicación de cualquier cambio en estas Condiciones, implica su aceptación.",
+    },
+    {
+      title: "20 - Información de contacto",
+      content:
+        "Preguntas acerca de los Términos de Servicio deben ser enviadas a ventas_online@ventorinternacional.com",
+    },
   ];
 
   return (
