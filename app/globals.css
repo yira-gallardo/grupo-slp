@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* importing font from public */
+font-face {
+  font-family: "Helv";
+  src: url("/helv.ttf");
+}
+font-face {
+  font-family: "HelvBold";
+  src: url("/helvbold.ttf");
+}
+
+* {
+  font-family: "Helv", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "HelvBold", sans-serif;
+}
 .custom-mt {
   margin-top: -12rem;
 }
@@ -13,6 +33,10 @@
 .fade-in-animation {
   animation: fadeIn 12s ease-in-out;
   animation-iteration-count: infinite;
+}
+p {
+  color: #7d7d7d;
+  margin-bottom: 16px;
 }
 
 @keyframes fadeIn {

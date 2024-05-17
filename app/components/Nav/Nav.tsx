@@ -3,17 +3,28 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import classNames from "classnames";
 
 export default function Nav() {
   const [isHome, setIsHome] = useState(false);
+  const [isWhitePage, setIsWhitePage] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     setIsHome(pathname === "/");
+    setIsWhitePage(pathname === "/aviso-de-privacidad");
   }, [pathname]);
 
   return (
-    <nav className="absolute top-0 right-0 flex justify-between items-center text-white w-full p-8 z-[1]">
+    <nav
+      className={classNames(
+        "absolute top-0 right-0 flex justify-between items-center w-full p-8 z-[1]",
+        {
+          "text-black": isWhitePage,
+          "text-white": !isWhitePage,
+        }
+      )}
+    >
       <div>
         {!isHome && (
           <Link href="/">
