@@ -168,7 +168,7 @@ export default function Home() {
       </section>
       {/* MISION VISION */}
       <section className="min-h-screen bg-white py-32 text-black">
-        <div className="flex px-16 gap-16">
+        <div className="block lg:flex px-16 gap-16">
           <div className="w-1/3">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -291,7 +291,7 @@ export default function Home() {
       </section>
       {/* INVERSIÓN */}
       <section className="bg-white">
-        <div className="flex gap-16">
+        <div className="block lg:flex gap-16">
           <div className="w-5/12 relative">
             <div
               className="absolute top-0 left-0 h-full bg-cover bg-center w-full bg-red-200"
