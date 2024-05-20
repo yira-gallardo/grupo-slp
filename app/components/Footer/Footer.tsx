@@ -6,8 +6,8 @@ export default function Footer() {
       className="bg-black text-white py-12 px-4 text-neutral-400"
       id="contacto"
     >
-      <div className="max-w-7xl mx-auto py-16 flex gap-16 border-b">
-        <div className="w-1/3 border-r pr-8 py-8">
+      <div className="max-w-7xl mx-auto py-16 block md:flex gap-16 border-b">
+        <div className="w-full md:w-1/3 md:border-r pr-8 py-8">
           <ul>
             <li className="mb-4">
               <Link
@@ -36,40 +36,9 @@ export default function Footer() {
                 <span>→</span>
               </Link>
             </li>
-            <li className="mb-4">
-              <Link
-                href="#"
-                className="flex items-center justify-between border-b py-4  font-light"
-              >
-                <span>FAQ</span>
-                <span>→</span>
-              </Link>
-            </li>
           </ul>
         </div>
-        <div className="w-1/3 py-8 border-r">
-          <ul>
-            <li className="mb-4">
-              <Link href="#" className="block">
-                Bolsa de trabajo
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link href="#" className="block">
-                Blog
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link href="#" className="block">
-                Outlet
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link href="#" className="block">
-                Distribuidores
-              </Link>
-            </li>
-          </ul>
+        <div className="w-full md:w-1/3 py-8 md:border-r">
           <div className="mt-8">
             <p className="mb-4">
               Para ofertas, promociones especiales y novedades suscríbete a
@@ -92,7 +61,7 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        <div className="w-1/3 py-8">
+        <div className="w-full md:w-1/3 py-8 text-center lg:text-left">
           <p className="mb-4">
             Horarios y días de atención: lunes a jueves de 07:00 am a 05:00 pm
           </p>
@@ -103,7 +72,7 @@ export default function Footer() {
           </p>
           <p className="mb-4">55 4894 0219</p>
           <p className="mb-4">ventas@philcoplus.com</p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 justify-center lg:justify-start">
             <Link href="#" className="block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

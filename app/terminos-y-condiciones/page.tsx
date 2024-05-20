@@ -117,7 +117,7 @@ export default function AvisoDePrivacidad() {
   return (
     <main className="relative">
       {/* HEADER */}
-      <header className="relative flex items-center px-16 py-32">
+      <header className="relative flex items-center mt-16 p-16 lg:px-16 lg:py-32">
         <div className="relative flex flex-col items-start">
           <motion.div
             initial={{ opacity: 0, scale: 0.95, x: -10 }}
@@ -161,7 +161,7 @@ export default function AvisoDePrivacidad() {
         </div>
       </header>
       {/* INFO */}
-      <section className="bg-white px-16 mb-4 text-black">
+      <section className="bg-white p-4 lg:px-16 mb-4 text-black">
         <motion.div
           initial={{ opacity: 0, scale: 0.95, x: -10 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -199,7 +199,7 @@ export default function AvisoDePrivacidad() {
         </motion.div>
       </section>
       {/* ACCORDION */}
-      <section className="bg-white mb-4 text-black p-32">
+      <section className="bg-white mb-4 text-black p-4 lg:p-32">
         <div className="accordion">
           {accordionData.map((item, index) => (
             <div key={index} className="accordion-item mb-8">
