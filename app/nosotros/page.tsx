@@ -476,8 +476,8 @@ export default function Nosotros() {
           transition={{ duration: 1, delay: 0.6 }}
         >
           <Image
-            width={50}
-            height={80}
+            width={30}
+            height={120}
             src="/img/logo-12.png"
             alt="Logo 5"
             className="h-8 mt-16 mb-4"
