@@ -7,13 +7,13 @@ export default function Nosotros() {
   return (
     <main className="relative">
       {/* HEADER */}
-      <header className="relative h-screen flex items-center pl-20 custom-mt-20 text-white">
+      <header className="relative h-screen flex items-center p-4 lg:pl-20 custom-mt-20 text-white">
         <div
           className="absolute top-0 right-0 w-full h-full z-[-1]  bg-cover bg-center"
           style={{ backgroundImage: "url('/img/nosotros-bg.png')" }}
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[-1]"></div>
-        <div className="relative flex flex-col justify-between h-full w-full">
+        <div className="relative flex flex-col justify-center lg:justify-between h-full w-full">
           <div />
           <div className="max-w-[600px]">
             <div className="divider w-[200%] h-[1px] bg-white my-8 relative left-[-100%]" />
@@ -25,8 +25,55 @@ export default function Nosotros() {
               <h1 className="text-6xl font-bold ml-4">GRUPO SLP</h1>
             </motion.div>
             <div className="divider w-[200%] h-[1px] bg-white my-8 relative left-[-100%]" />
+            <div className="flex w-full justify-around p-8 gap-8 flex-wrap">
+              <div className="flex items-center">
+                <Image
+                  width={200}
+                  height={100}
+                  src="/img/logo-1.png"
+                  alt="Logo 1"
+                  className="h-[20px] w-auto"
+                />
+              </div>
+              <div className="flex items-center">
+                <Image
+                  width={200}
+                  height={100}
+                  src="/img/logo-2.png"
+                  alt="Logo 2"
+                  className="h-[20px] w-auto"
+                />
+              </div>
+              <div className="flex items-center">
+                <Image
+                  width={200}
+                  height={100}
+                  src="/img/logo-3.png"
+                  alt="Logo 3"
+                  className="h-[20px] w-auto"
+                />
+              </div>
+              <div className="flex items-center">
+                <Image
+                  width={200}
+                  height={100}
+                  src="/img/logo-4.png"
+                  alt="Logo 4"
+                  className="h-[20px] w-auto"
+                />
+              </div>
+              <div className="flex items-center">
+                <Image
+                  width={200}
+                  height={100}
+                  src="/img/logo-5.png"
+                  alt="Logo 5"
+                  className="h-[20px] w-auto"
+                />
+              </div>
+            </div>
           </div>
-          <div className="flex w-full justify-around p-8">
+          <div className="hidden lg:flex w-full justify-around p-8">
             <div className="flex items-center">
               <Image
                 width={200}
@@ -76,9 +123,9 @@ export default function Nosotros() {
         </div>
       </header>
       {/* QUIENES SOMOS */}
-      <section className="bg-white pt-16 px-16 flex items-center mb-4">
-        <div className="flex gap-8 items-center">
-          <div className="w-1/2">
+      <section className="bg-white p-4 lg:pt-16 lg:px-16 flex items-center mb-4">
+        <div className="block lg:flex gap-8 items-center">
+          <div className="w-full lg:w-1/2 mb-4">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -94,7 +141,7 @@ export default function Nosotros() {
               />
             </motion.div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -124,7 +171,7 @@ export default function Nosotros() {
         </div>
       </section>
       {/* MAS INFO */}
-      <section className="bg-white px-16 mb-4">
+      <section className="bg-white p-4 lg:px-16 mb-4">
         <motion.div
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           viewport={{ once: true }}
@@ -179,9 +226,25 @@ export default function Nosotros() {
         </motion.div>
       </section>
       {/* HEERAMIENTAS */}
-      <section className="bg-white px-16 pt-8">
-        <div className="flex gap-8 items-center">
-          <div className="w-1/2">
+      <section className="bg-white p-4 lg:px-16 lg:pt-8">
+        <div className="block lg:flex gap-8 items-center">
+          <div className="lg:hidden w-full lg:w-1/2 mb-8">
+            <motion.div
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.95, x: -10 }}
+              transition={{ duration: 1, delay: 0.6 }}
+            >
+              <Image
+                width={500}
+                height={500}
+                src="/img/img-12.png"
+                alt="Logo 5"
+                className="w-full h-auto"
+              />
+            </motion.div>
+          </div>
+          <div className="w-full lg:w-1/2">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -230,7 +293,7 @@ export default function Nosotros() {
               </p>
             </motion.div>
           </div>
-          <div className="w-1/2">
+          <div className="hidden lg:block w-full lg:w-1/2">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -249,7 +312,7 @@ export default function Nosotros() {
         </div>
       </section>
       {/* MARCAS */}
-      <section className="bg-white px-16 pt-8 mb-32">
+      <section className="bg-white p-4 lg:px-16 lg:pt-8 mb-32">
         <motion.div
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           viewport={{ once: true }}

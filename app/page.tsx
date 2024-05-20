@@ -5,12 +5,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden">
       {/* HEADER */}
-      <header className="relative h-screen flex items-center pl-20 custom-mt-20">
+      <header className="relative h-screen flex items-center lg:pl-8 custom-mt-20">
         <div
-          className="absolute top-0 right-0 w-full h-full z-[-1] blur"
+          className="hidden md:block absolute top-0 right-0 w-full h-full z-[-1] blur bg-cover"
           style={{ backgroundImage: "url('/img/img-1.png')" }}
+        />
+        <div
+          className="md:hidden absolute top-0 right-0 w-full h-full z-[-1] blur bg-cover bg-left-bottom"
+          style={{ backgroundImage: "url('/img/img-1-mb.png')" }}
         />
         <div className="relative flex flex-col items-start">
           <motion.div
@@ -23,77 +27,85 @@ export default function Home() {
               height={200}
               src="/img/logo.png"
               alt="Imagen"
-              className="h-28 w-52 ml-4"
+              className="h-30 w-40 md:h-28 md:w-52 ml-8 lg:ml-4"
             />
           </motion.div>
-          <div className="divider w-[200%] h-[1px] bg-white my-8 relative left-[-100%]" />
+          <div className="divider w-full lg:w-[200%] h-[1px] bg-white my-8 relative lg:left-[-100%]" />
           <motion.div
             initial={{ opacity: 0, scale: 0.95, x: -10 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <div className="text-white">
-              <p className="text-left text-5xl font-bold">Aportamos luz</p>
-              <p className="text-left mb-1 text-4xl">a tu vida diaria</p>
+            <div className="text-white px-8 lg:p-0">
+              <p className="text-left text-4xl md:text-5xl font-bold text-white">
+                Aportamos luz
+              </p>
+              <p className="text-left mb-1 text-3xl md:text-4xl text-white">
+                a tu vida diaria
+              </p>
             </div>
           </motion.div>
-          <div className="divider w-[200%] h-[1px] bg-white my-8 relative left-[-100%]" />
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, x: -10 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-          >
-            <div className="mt-2 ml-4 flex items-center space-x-5 pt-12 gap-8">
+          <div className="divider w-full lg:w-[200%] h-[1px] bg-white mt-8 lg:my-8 relative lg:left-[-100%]" />
+          <div className="text-center p-8 lg:p-0 mt-2 ml-4 block w-full lg:flex flex-col md:flex-row items-start md:items-center space-x-5 pt-12 gap-8">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, x: -10 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1 }}
+            >
               <Image
                 width={200}
                 height={100}
                 src="/img/logo-1.png"
                 alt="Logo 1"
-                className="h-[20px] w-auto"
+                className="h-[20px] w-auto inline-block m-2"
               />
               <Image
                 width={200}
                 height={100}
                 src="/img/logo-2.png"
                 alt="Logo 2"
-                className="h-[20px] w-auto"
+                className="h-[20px] w-auto inline-block m-2"
               />
               <Image
                 width={200}
                 height={100}
                 src="/img/logo-3.png"
                 alt="Logo 3"
-                className="h-[20px] w-auto"
+                className="h-[20px] w-auto inline-block m-2"
               />
               <Image
                 width={200}
                 height={100}
                 src="/img/logo-4.png"
                 alt="Logo 4"
-                className="h-[20px] w-auto"
+                className="h-[20px] w-auto inline-block m-2"
               />
               <Image
                 width={200}
                 height={100}
                 src="/img/logo-5.png"
                 alt="Logo 5"
-                className="h-[20px] w-auto"
+                className="h-[20px] w-auto inline-block m-2"
               />
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </header>
       {/* EMPRESA MEXICANA */}
-      <section className="min-h-screen relative">
+      <section className="h-auto lg:min-h-screen relative">
         <div
-          className="background absolute top-0 left-0 h-full bg-cover bg-center w-full z-[-2]"
+          className="background hidden lg:block absolute top-0 left-0 h-full bg-cover bg-center w-full z-[-2]"
           style={{ backgroundImage: "url('/img/img-3-gray.png')" }}
         />
         <div
-          className="background absolute top-0 left-0 h-full bg-cover bg-center w-full z-[-1] fade-in-animation"
+          className="background hidden lg:block absolute top-0 left-0 h-full bg-cover bg-center w-full z-[-1] fade-in-animation"
           style={{ backgroundImage: "url('/img/img-3-light.png')" }}
         />
-        <div className="content absolute top-0 left-0 h-full w-full z-1 flex items-center px-16">
+        <div
+          className="background block lg:hidden absolute top-0 left-0 h-full bg-cover bg-right-top w-full z-[-1]"
+          style={{ backgroundImage: "url('/img/img-3-light.png')" }}
+        />
+        <div className="content relative lg:absolute top-0 left-0 h-full w-full z-1 flex items-center px-8 lg:px-16 py-16 lg:p-0">
           <div className="max-w-[500px] text-black">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -123,9 +135,25 @@ export default function Home() {
         </div>
       </section>
       {/* ILUMINACION */}
-      <section className="min-h-screen bg-zinc-800 py-32 text-white">
-        <div className="flex px-16 items-center gap-64">
-          <div className="w-1/2">
+      <section className="min-h-screen bg-zinc-800 py-8 lg:py-32 text-white">
+        <div className="block md:flex px-8 lg:px-16 items-center lg:gap-64">
+          <div className="lg:hidden w-full md:w-1/2 p-4">
+            <motion.div
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.95, x: 10 }}
+              transition={{ duration: 1, delay: 0.6 }}
+            >
+              <Image
+                width={500}
+                height={500}
+                src="/img/home-iluminacion.png"
+                alt="Iluminación óptima para tu espacio"
+                className="w-full h-auto"
+              />
+            </motion.div>
+          </div>
+          <div className="w-full md:w-1/2">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -148,7 +176,7 @@ export default function Home() {
               </p>
             </motion.div>
           </div>
-          <div className="w-1/2 p-4">
+          <div className="hidden lg:block w-full md:w-1/2 p-4">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -167,9 +195,9 @@ export default function Home() {
         </div>
       </section>
       {/* MISION VISION */}
-      <section className="min-h-screen bg-white py-32 text-black">
-        <div className="block lg:flex px-16 gap-16">
-          <div className="w-1/3">
+      <section className="min-h-screen bg-white py-8 md:py-32 text-black">
+        <div className="block lg:flex px-8 lg:px-16 gap-16">
+          <div className="w-full md:w-1/3 mb-8">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -184,7 +212,7 @@ export default function Home() {
                 className="w-full h-auto"
               />
             </motion.div>
-            <div className="text drop-shadow-md bg-white p-6 w-[80%] relative top-[-6%] left-4 py-8 min-h-[600px]">
+            <div className="text drop-shadow-md bg-white p-6 w-full lg:w-[80%] relative top-[-6%] left-0 lg:left-4 py-8 h-auto lg:min-h-[600px]">
               <motion.div
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -206,7 +234,7 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-          <div className="w-1/3">
+          <div className="w-full md:w-1/3 mb-8">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -221,7 +249,7 @@ export default function Home() {
                 className="w-full h-auto"
               />
             </motion.div>
-            <div className="text drop-shadow-md bg-white p-6 w-[80%] relative top-[-6%] left-4 py-8 min-h-[600px]">
+            <div className="text drop-shadow-md bg-white p-6 w-full lg:w-[80%] relative top-[-6%] left-0 lg:left-4 py-8 h-auto lg:min-h-[600px]">
               <motion.div
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -245,7 +273,7 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-          <div className="w-1/3">
+          <div className="w-full md:w-1/3 mb-8">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -260,7 +288,7 @@ export default function Home() {
                 className="w-full h-auto"
               />
             </motion.div>
-            <div className="text drop-shadow-md bg-white p-6 w-[80%] relative top-[-6%] left-4 py-8 min-h-[600px]">
+            <div className="text drop-shadow-md bg-white p-6 w-full lg:w-[80%] relative top-[-6%] left-0 lg:left-4 py-8 h-auto lg:min-h-[600px]">
               <motion.div
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -292,13 +320,13 @@ export default function Home() {
       {/* INVERSIÓN */}
       <section className="bg-white">
         <div className="block lg:flex gap-16">
-          <div className="w-5/12 relative">
+          <div className="w-full h-[500px] md:h-auto md:w-5/12 relative">
             <div
               className="absolute top-0 left-0 h-full bg-cover bg-center w-full bg-red-200"
               style={{ backgroundImage: "url('/img/home-inversion.png')" }}
             />
           </div>
-          <div className="w-7/12 py-48 px-16">
+          <div className="w-full md:w-7/12 py-16 lg:py-48 px-8 lg:px-16">
             <motion.div
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
