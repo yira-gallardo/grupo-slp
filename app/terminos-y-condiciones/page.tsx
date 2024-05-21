@@ -33,7 +33,7 @@ export default function AvisoDePrivacidad() {
         "Los precios de nuestros productos están sujetos a cambio sin previo aviso. Nos reservamos el derecho de modificar o discontinuar el Servicio (o cualquier parte del contenido) en cualquier momento. No seremos responsables ante ti o alguna tercera parte por cualquier modificación, cambio de precio, suspensión o discontinuidad del Servicio.",
     },
     {
-      title: "5 - Productos o servicios (si aplicable)",
+      title: "5 - Productos o servicios (sí aplicable)",
       content:
         "Ciertos productos o servicios pueden estar disponibles exclusivamente en nuestra tienda en línea. Estos pueden tener cantidades limitadas y estar sujetos a devolución o cambio únicamente de acuerdo con nuestra política de devolución. Nos hemos esforzado en mostrar los colores y las imágenes de nuestros productos de la tienda en línea con la mayor precisión posible. No podemos garantizar que el monitor de tu computadora los muestre de manera exacta. Nos reservamos el derecho, pero no estamos obligados, a limitar las ventas de nuestros productos o servicios a cualquier persona, región geográfica o jurisdicción. Podemos ejercer este derecho basados en cada caso. Nos reservamos también el derecho de limitar las cantidades de los productos o servicios que ofrecemos. Todas las descripciones de productos o precios están sujetos a cambios en cualquier momento sin previo aviso, a nuestra sola discreción. Podremos discontinuar cualquier producto en cualquier momento. No garantizamos que la calidad de los productos, servicios u otro material que compres u obtengas cumplas tus expectativas, o que cualquier error en el Servicio será corregido.",
     },

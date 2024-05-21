@@ -252,7 +252,7 @@ export default function Nosotros() {
               transition={{ duration: 1, delay: 0.1 }}
             >
               <h2 className="text-4xl font-bold mb-8">
-                Entre nuestras herramientas destacan
+                Entre nuestras herramientas destacan:
               </h2>
               <ul className="list-disc ml-5 space-y-3">
                 <li>
@@ -353,7 +353,7 @@ export default function Nosotros() {
               <p>PAESE</p>
             </li>
             <li>
-              <p>Hipoteca Verde</p>
+              <p>Hipoteca verde</p>
             </li>
           </ul>
         </motion.div>
