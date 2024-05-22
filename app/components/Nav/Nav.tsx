@@ -12,8 +12,10 @@ export default function Nav() {
 
   useEffect(() => {
     setIsHome(pathname === "/");
-    setIsWhitePage(pathname === "/aviso-de-privacidad");
-    setIsWhitePage(pathname === "/terminos-y-condiciones");
+    setIsWhitePage(
+      pathname === "/aviso-de-privacidad" ||
+        pathname === "/terminos-y-condiciones"
+    );
   }, [pathname]);
 
   return (
@@ -31,7 +33,7 @@ export default function Nav() {
           {!isHome && (
             <Link href="/">
               <Image
-                src="/img/logo.png"
+                src={isWhitePage ? "/img/logo-13.png" : "/img/logo.png"}
                 width={100}
                 height={100}
                 alt="Grupo SLP Logo"
