@@ -25,53 +25,6 @@ export default function Nosotros() {
               <h1 className="text-6xl font-bold ml-4">GRUPO SLP</h1>
             </motion.div>
             <div className="divider w-[200%] h-[1px] bg-white my-8 relative left-[-100%]" />
-            <div className="flex w-full justify-around p-8 gap-8 flex-wrap">
-              <div className="flex items-center">
-                <Image
-                  width={200}
-                  height={100}
-                  src="/img/logo-1.png"
-                  alt="Logo 1"
-                  className="h-[20px] w-auto"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  width={200}
-                  height={100}
-                  src="/img/logo-2.png"
-                  alt="Logo 2"
-                  className="h-[20px] w-auto"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  width={200}
-                  height={100}
-                  src="/img/logo-3.png"
-                  alt="Logo 3"
-                  className="h-[20px] w-auto"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  width={200}
-                  height={100}
-                  src="/img/logo-4.png"
-                  alt="Logo 4"
-                  className="h-[20px] w-auto"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  width={200}
-                  height={100}
-                  src="/img/logo-5.png"
-                  alt="Logo 5"
-                  className="h-[20px] w-auto"
-                />
-              </div>
-            </div>
           </div>
           <div className="hidden lg:flex w-full justify-around p-8">
             <div className="flex items-center">
@@ -261,8 +214,7 @@ export default function Nosotros() {
                     ingreso),
                     <br></br>
                     subacuáticas, fotométricas, temperatura de color, vibración
-                    y<br></br>
-                    envejecimiento acelerado.
+                    y envejecimiento acelerado.
                   </p>
                 </li>
                 <li>
@@ -271,24 +223,22 @@ export default function Nosotros() {
                     luminaria,
                     <br></br>
                     su calidad de luz, factor de potencia, consumo real de
-                    energía,
-                    <br></br>
-                    entre otros parámetros específicos por producto
+                    energía, entre otros parámetros específicos <br></br> por
+                    producto
                   </p>
                 </li>
                 <li>
                   <p>
                     Hornos para pintar, maquinaria para montar LEDs y hacer
-                    <br></br>
                     ensambles.
                   </p>
                 </li>
               </ul>
               <p className="pt-6">
                 ¡Encuentra nuestros productos en tiendas físicas y también a
-                través de <br></br> nuestra tienda online! Contamos con
-                presencia en abarrotes y <br></br> autoservicios; sin embargo,
-                podemos proveerte lámparas<br></br> personalizadas y luminarias
+                través de nuestra tienda online! <br></br> Contamos con
+                presencia en abarrotes y autoservicios;<br></br> sin embargo,
+                podemos proveerte lámparas personalizadas y luminarias
                 confeccionadas para proyectos únicos.
               </p>
             </motion.div>
