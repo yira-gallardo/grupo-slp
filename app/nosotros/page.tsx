@@ -73,6 +73,49 @@ export default function Nosotros() {
               />
             </div>
           </div>
+          <div className="text-center p-4 lg:p-0 mt-2 block w-full lg:hidden">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, x: -10 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-1.png"
+                alt="Logo 1"
+                className="h-[20px] w-auto inline-block m-2"
+              />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-2.png"
+                alt="Logo 2"
+                className="h-[20px] w-auto inline-block m-2"
+              />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-3.png"
+                alt="Logo 3"
+                className="h-[20px] w-auto inline-block m-2"
+              />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-4.png"
+                alt="Logo 4"
+                className="h-[20px] w-auto inline-block m-2"
+              />
+              <Image
+                width={200}
+                height={100}
+                src="/img/logo-5.png"
+                alt="Logo 5"
+                className="h-[20px] w-auto inline-block m-2"
+              />
+            </motion.div>
+          </div>
         </div>
       </header>
       {/* QUIENES SOMOS */}
