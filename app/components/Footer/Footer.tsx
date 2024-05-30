@@ -38,13 +38,13 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="w-full md:w-1/3 py-8 md:border-r">
+        <div className="w-full md:w-1/3 py-8 md:border-r text-center">
           <div className="mt-8">
             <p className="mb-4">
               Para ofertas, promociones especiales y novedades suscríbete a
               nuestro Newsletter
             </p>
-            <form className="flex">
+            <form className="flex justify-center">
               <div className="border rounded-md overflow-hidden">
                 <input
                   type="email"
